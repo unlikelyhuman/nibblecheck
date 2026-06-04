@@ -32,7 +32,7 @@ export async function build() {
   // and checker.js whenever the data actually changes.
   const version = createHash("sha1").update(JSON.stringify(items)).digest("hex").slice(0, 10);
 
-  writePage("index.html", renderHome(pets));
+  writePage("index.html", renderHome(pets, version));
   writePage("checker/index.html", renderCheckerPage(pets, version));
 
   let pageCount = 0;

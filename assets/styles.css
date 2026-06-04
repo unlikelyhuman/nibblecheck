@@ -23,11 +23,35 @@ h1{font-size:30px;line-height:1.2;margin:.2em 0 .4em}
 .nav-check{padding:8px 14px;font-size:14px}
 .pet-cards{display:grid;gap:14px}.pet-card{display:block;padding:18px;background:var(--card);border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink)}
 .pet-card h2{margin:0 0 4px}
-.checker label{display:block;margin:14px 0 6px;font-weight:600}
-.checker select,.checker input{font-size:18px;padding:10px;border:1px solid var(--line);border-radius:8px;width:100%}
-.result{margin-top:18px;min-height:40px}
-.suggestions{list-style:none;padding:0;display:grid;gap:6px}
-.suggestions a{display:block;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:8px;text-decoration:none}
+/* --- Finder tool (home + checker) --- */
+.intro{text-align:center;padding:6px 0 2px}
+.intro h1{font-size:30px;line-height:1.15;margin:.1em 0 .25em}
+.sub{color:var(--grey);font-size:18px;margin:.1em auto 1.4em;max-width:30em}
+.finder{max-width:520px;margin:0 auto}
+.step{margin-bottom:16px}
+.step label{display:block;font-weight:700;margin:0 0 6px;font-size:14px;letter-spacing:.01em;color:var(--grey)}
+.combo{position:relative}
+.combo input{width:100%;font-size:19px;padding:14px 16px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink)}
+.combo input:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(26,127,60,.15)}
+.dropdown{list-style:none;margin:6px 0 0;padding:6px;position:absolute;left:0;right:0;z-index:20;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 30px rgba(0,0,0,.13);max-height:300px;overflow:auto}
+.dropdown[hidden]{display:none}
+.dropdown li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 12px;border-radius:8px;cursor:pointer}
+.dropdown li:hover{background:#f1efe9}
+.dropdown .v{font-size:13px;font-weight:700;white-space:nowrap}
+.result{margin-top:18px}
+.verdict-card{border-radius:14px;padding:18px 20px;border:1px solid var(--line)}
+.verdict-card.verdict--safe{background:#eaf6ee;border-color:#bfe3c9}
+.verdict-card.verdict--moderation{background:#fbf3e0;border-color:#ecd9a8}
+.verdict-card.verdict--never{background:#fbeaea;border-color:#eec2c2}
+.verdict-card.verdict--ask_vet{background:#eef0f3;border-color:#d6dae1}
+.verdict-label{font-size:22px;font-weight:800;margin:0 0 4px}
+.verdict-card.verdict--safe .verdict-label{color:var(--green)}
+.verdict-card.verdict--moderation .verdict-label{color:var(--amber)}
+.verdict-card.verdict--never .verdict-label{color:var(--red)}
+.verdict-card.verdict--ask_vet .verdict-label{color:var(--grey)}
+.verdict-q{font-weight:600;margin:0 0 8px}
+.verdict-card .reason{font-size:17px;margin:0 0 10px}
+.browse{text-align:center;color:var(--grey);font-size:14px;margin-top:30px}
 .cta{margin-top:18px}
 .site-footer{max-width:760px;margin:24px auto;padding:24px;border-top:1px solid var(--line)}
 .disclaimer{font-size:13px;color:var(--grey)}

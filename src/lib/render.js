@@ -26,8 +26,7 @@ export function layout({ title, description, canonical, body, jsonLd }) {
 <link rel="stylesheet" href="${P}/styles.css">
 ${jsonLd ? `<script type="application/ld+json">${jsonLd}</script>` : ""}
 </head><body>
-<header class="site-header"><a class="brand" href="${P}/">${esc(site.brand)}</a>
-<a class="nav-check" href="${P}/checker/">Safety checker</a></header>
+<header class="site-header"><a class="brand" href="${P}/">${esc(site.brand)}</a></header>
 <main>${body}</main>
 <footer class="site-footer"><p class="disclaimer">${esc(site.disclaimer)}</p></footer>
 </body></html>`;
@@ -86,36 +85,68 @@ export function renderPetIndex(pet, rows) {
   });
 }
 
-export function renderHome(pets) {
-  const cards = pets.map((p) =>
-    `<a class="pet-card" href="${P}/${p.slug}/"><h2>${esc(p.name)}</h2><p>${esc(p.blurb)}</p></a>`).join("");
-  const body = `<section class="hero"><h1>${esc(site.brand)}</h1>
-<p class="tagline">${esc(site.tagline)}</p>
-<a class="big-cta" href="${P}/checker/">Open the safety checker</a></section>
-<section class="pets"><h2>Pick your pet</h2><div class="pet-cards">${cards}</div></section>`;
+// The whole product: search your pet, then a food drops in, then the answer.
+function finderTool() {
+  return `<section class="finder">
+<div class="step">
+<label for="pet-input">Your pet</label>
+<div class="combo">
+<input id="pet-input" type="text" placeholder="Search your pet…  e.g. rabbit" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="pet-list">
+<ul id="pet-list" class="dropdown" role="listbox" hidden></ul>
+</div>
+</div>
+<div class="step" id="step-food" hidden>
+<label for="food-input">Can my <span id="pet-name">pet</span> eat…</label>
+<div class="combo">
+<input id="food-input" type="text" placeholder="Search a food…  e.g. apple" autocomplete="off" aria-autocomplete="list" aria-controls="food-list">
+<ul id="food-list" class="dropdown" role="listbox" hidden></ul>
+</div>
+</div>
+<div id="result" class="result" aria-live="polite"></div>
+</section>`;
+}
+
+function finderScripts(pets, version) {
+  const v = version ? `?v=${version}` : "";
+  const petsJson = JSON.stringify(
+    pets.map((p) => ({ slug: p.slug, name: p.name, name_plural: p.name_plural })),
+  );
+  return `<script>window.__BASE__=${JSON.stringify(P)};window.__DATA_V__=${JSON.stringify(version)};window.__PETS__=${petsJson}</script>
+<script src="${P}/checker.js${v}" type="module"></script>`;
+}
+
+function browseLinks(pets) {
+  const links = pets.map((p) => `<a href="${P}/${p.slug}/">${esc(p.name_plural)}</a>`).join(" · ");
+  return `<p class="browse">Browse every food: ${links}</p>`;
+}
+
+export function renderHome(pets, version = "") {
+  const body = `<section class="intro">
+<h1>Is it safe for your pet to eat?</h1>
+<p class="sub">Pick your pet, type a food, get a clear vet-sourced answer in seconds.</p>
+</section>
+${finderTool()}
+${browseLinks(pets)}
+${finderScripts(pets, version)}`;
   return layout({
-    title: `${site.brand} — ${site.tagline}`,
-    description: "Sourced, easy answers on what your pet can safely eat.",
+    title: `${site.brand} — is it safe for your pet to eat?`,
+    description: "Pick your pet and a food for a clear, vet-sourced safe / not-safe answer in seconds.",
     canonical: `${site.baseUrl}/`,
     body,
   });
 }
 
 export function renderCheckerPage(pets, version = "") {
-  const options = pets.map((p) => `<option value="${p.slug}">${esc(p.name)}</option>`).join("");
-  const v = version ? `?v=${version}` : "";
-  const body = `<section class="checker">
+  const body = `<section class="intro">
 <h1>Pet food safety checker</h1>
-<label>My pet is a <select id="pet">${options}</select></label>
-<label>Can it eat <input id="food" type="text" placeholder="e.g. bell pepper" autocomplete="off"></label>
-<div id="result" class="result" aria-live="polite"></div>
-<ul id="suggestions" class="suggestions"></ul>
+<p class="sub">Pick your pet, type a food, get a clear vet-sourced answer.</p>
 </section>
-<script>window.__BASE__=${JSON.stringify(P)};window.__DATA_V__=${JSON.stringify(version)}</script>
-<script src="${P}/checker.js${v}" type="module"></script>`;
+${finderTool()}
+${browseLinks(pets)}
+${finderScripts(pets, version)}`;
   return layout({
     title: `Pet food safety checker | ${site.brand}`,
-    description: "Type a food and your pet to instantly see if it's safe.",
+    description: "Type your pet and a food to instantly see if it's safe, with a vet-sourced explanation.",
     canonical: `${site.baseUrl}/checker/`,
     body,
   });
