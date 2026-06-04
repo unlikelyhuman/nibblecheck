@@ -24,13 +24,23 @@ if (typeof document !== "undefined") {
   const petInput = document.getElementById("pet-input");
   const petList = document.getElementById("pet-list");
   const stepFood = document.getElementById("step-food");
-  const petNameEl = document.getElementById("pet-name");
   const foodInput = document.getElementById("food-input");
   const foodList = document.getElementById("food-list");
   const resultEl = document.getElementById("result");
 
   let data = [];
   let selectedPet = null;
+
+  // Make the whole finder exactly as wide as the brand name.
+  const brandEl = document.querySelector(".brand-name");
+  const heroEl = document.querySelector(".hero");
+  function sizeToBrand() {
+    if (!brandEl || !heroEl) return;
+    const w = Math.ceil(brandEl.getBoundingClientRect().width);
+    heroEl.style.width = Math.min(w, Math.floor(window.innerWidth * 0.94)) + "px";
+  }
+  sizeToBrand();
+  window.addEventListener("resize", sizeToBrand);
 
   fetch(`${BASE}/checker-data.json${V ? `?v=${V}` : ""}`)
     .then((r) => r.json())
@@ -45,6 +55,8 @@ if (typeof document !== "undefined") {
   }
 
   function openPetList() {
+    // Dropdown appears only once the user starts typing.
+    if (!petInput.value.trim()) { petList.hidden = true; petList.innerHTML = ""; petInput.setAttribute("aria-expanded", "false"); return; }
     const matches = petMatches();
     if (!matches.length) { petList.hidden = true; petList.innerHTML = ""; return; }
     petList.innerHTML = matches
@@ -61,9 +73,9 @@ if (typeof document !== "undefined") {
     petInput.value = pet.name;
     petList.hidden = true;
     petInput.setAttribute("aria-expanded", "false");
-    petNameEl.textContent = pet.name_plural;
     stepFood.hidden = false;
     foodInput.value = "";
+    foodInput.placeholder = `Can ${pet.name_plural} eat…?`;
     resultEl.innerHTML = "";
     foodInput.focus();
   }

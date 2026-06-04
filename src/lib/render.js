@@ -86,24 +86,25 @@ export function renderPetIndex(pet, rows) {
 }
 
 // The whole product: search your pet, then a food drops in, then the answer.
+// Visible labels are hidden (sr-only) to keep the landing uncluttered.
 function finderTool() {
-  return `<section class="finder">
+  return `<div class="finder">
 <div class="step">
-<label for="pet-input">Your pet</label>
+<label class="sr-only" for="pet-input">Search your pet</label>
 <div class="combo">
-<input id="pet-input" type="text" placeholder="Search your pet…  e.g. rabbit" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="pet-list">
+<input id="pet-input" type="text" placeholder="Search your pet…" autocomplete="off" inputmode="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="pet-list">
 <ul id="pet-list" class="dropdown" role="listbox" hidden></ul>
 </div>
 </div>
 <div class="step" id="step-food" hidden>
-<label for="food-input">Can my <span id="pet-name">pet</span> eat…</label>
+<label class="sr-only" for="food-input">Search a food</label>
 <div class="combo">
-<input id="food-input" type="text" placeholder="Search a food…  e.g. apple" autocomplete="off" aria-autocomplete="list" aria-controls="food-list">
+<input id="food-input" type="text" placeholder="Type a food…" autocomplete="off" inputmode="search" aria-autocomplete="list" aria-controls="food-list">
 <ul id="food-list" class="dropdown" role="listbox" hidden></ul>
 </div>
 </div>
 <div id="result" class="result" aria-live="polite"></div>
-</section>`;
+</div>`;
 }
 
 function finderScripts(pets, version) {
@@ -120,34 +121,46 @@ function browseLinks(pets) {
   return `<p class="browse">Browse every food: ${links}</p>`;
 }
 
-export function renderHome(pets, version = "") {
-  const body = `<section class="intro">
-<h1>Is it safe for your pet to eat?</h1>
-<p class="sub">Pick your pet, type a food, get a clear vet-sourced answer in seconds.</p>
-</section>
+// A bare, centred shell with no header — just the brand and the search.
+function finderLayout({ title, description, canonical, srText, pets, version }) {
+  return `<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(description)}">
+<link rel="canonical" href="${canonical}">
+<link rel="stylesheet" href="${P}/styles.css">
+</head><body class="finder-body">
+<main class="stage">
+<div class="hero">
+<h1 class="brand-name">${esc(site.brand)}</h1>
+<p class="sr-only">${esc(srText)}</p>
 ${finderTool()}
-${browseLinks(pets)}
-${finderScripts(pets, version)}`;
-  return layout({
+</div>
+</main>
+<footer class="mini-footer">${browseLinks(pets)}<p class="disclaimer">${esc(site.disclaimer)}</p></footer>
+${finderScripts(pets, version)}
+</body></html>`;
+}
+
+export function renderHome(pets, version = "") {
+  return finderLayout({
     title: `${site.brand} — is it safe for your pet to eat?`,
     description: "Pick your pet and a food for a clear, vet-sourced safe / not-safe answer in seconds.",
+    srText: "Search your pet, then a food, for a clear vet-sourced answer on whether it's safe to feed.",
     canonical: `${site.baseUrl}/`,
-    body,
+    pets,
+    version,
   });
 }
 
 export function renderCheckerPage(pets, version = "") {
-  const body = `<section class="intro">
-<h1>Pet food safety checker</h1>
-<p class="sub">Pick your pet, type a food, get a clear vet-sourced answer.</p>
-</section>
-${finderTool()}
-${browseLinks(pets)}
-${finderScripts(pets, version)}`;
-  return layout({
+  return finderLayout({
     title: `Pet food safety checker | ${site.brand}`,
     description: "Type your pet and a food to instantly see if it's safe, with a vet-sourced explanation.",
+    srText: "Search your pet, then a food, for a clear vet-sourced answer on whether it's safe to feed.",
     canonical: `${site.baseUrl}/checker/`,
-    body,
+    pets,
+    version,
   });
 }
