@@ -1,4 +1,6 @@
-# NibbleSafe — exotic-pet food & safety checker
+# NibbleCheck — exotic-pet food & safety checker
+
+**Live:** https://unlikelyhuman.github.io/nibblecheck/
 
 A free-to-host, programmatic-SEO site that answers **"Can my [pet] eat [X]?"** for
 underserved exotic pets, starting with **guinea pigs**. Each food gets a sourced
