@@ -35,6 +35,12 @@ export function questionFor(pet, row) {
   return `Can ${pet.name_plural} eat ${row.item.toLowerCase()}?`;
 }
 
+function verificationMeta() {
+  return site.googleSiteVerification
+    ? `<meta name="google-site-verification" content="${escAttr(site.googleSiteVerification)}">`
+    : "";
+}
+
 function ldBlocks(jsonLd) {
   const arr = Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [];
   return arr.map((j) => `<script type="application/ld+json">${j}</script>`).join("\n");
@@ -54,7 +60,7 @@ function ogMeta({ title, description, canonical, ogType }) {
 export function layout({ title, description, canonical, body, jsonLd, ogType = "website" }) {
   return `<!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${verificationMeta()}
 <title>${esc(title)}</title>
 <meta name="description" content="${escAttr(description)}">
 <link rel="canonical" href="${escAttr(canonical)}">
@@ -230,7 +236,7 @@ function browseLinks(pets) {
 function finderLayout({ title, description, canonical, srText, pets, version, jsonLd, ogType = "website" }) {
   return `<!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${verificationMeta()}
 <title>${esc(title)}</title>
 <meta name="description" content="${escAttr(description)}">
 <link rel="canonical" href="${escAttr(canonical)}">

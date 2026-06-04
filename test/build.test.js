@@ -21,6 +21,9 @@ test("build emits pages, sitemap and checker data", async () => {
   assert.ok(Array.isArray(data) && data[0].verdict);
   const sitemap = readFileSync(`${out}sitemap.xml`, "utf8");
   assert.match(sitemap, /guinea-pig\/bell-pepper/);
+  // Every URL carries a lastmod (from last_reviewed) to prompt recrawl.
+  assert.match(sitemap, /<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/);
+  assert.equal((sitemap.match(/<lastmod>/g) || []).length, result.urlCount, "every URL needs a lastmod");
 
   // SEO-depth must not add pages: URL count stays fixed.
   assert.equal(result.urlCount, 814, "URL count must stay 814 (no new page types)");
