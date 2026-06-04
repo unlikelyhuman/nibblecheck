@@ -1,7 +1,10 @@
 export const site = {
-  brand: "NibbleSafe",
+  brand: "NibbleCheck",
   tagline: "Is it safe for your pet?",
-  baseUrl: "https://nibblesafe.pages.dev", // placeholder; set at deploy
+  // Project Pages serve under a subpath. pathPrefix is prepended to every
+  // internal link and asset; baseUrl is the full origin + prefix for canonicals.
+  pathPrefix: "/nibblecheck",
+  baseUrl: "https://unlikelyhuman.github.io/nibblecheck",
   disclaimer:
     "This information is for general guidance only and is not a substitute " +
     "for professional veterinary advice. When in doubt, ask your vet.",

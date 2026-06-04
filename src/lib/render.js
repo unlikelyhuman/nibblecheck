@@ -6,6 +6,8 @@ const VERDICT_LABEL = {
   never: "⛔ Never", ask_vet: "❓ Ask your vet",
 };
 
+const P = site.pathPrefix || "";
+
 function esc(s) {
   return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
@@ -21,11 +23,11 @@ export function layout({ title, description, canonical, body, jsonLd }) {
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${canonical}">
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="${P}/styles.css">
 ${jsonLd ? `<script type="application/ld+json">${jsonLd}</script>` : ""}
 </head><body>
-<header class="site-header"><a class="brand" href="/">${esc(site.brand)}</a>
-<a class="nav-check" href="/checker/">Safety checker</a></header>
+<header class="site-header"><a class="brand" href="${P}/">${esc(site.brand)}</a>
+<a class="nav-check" href="${P}/checker/">Safety checker</a></header>
 <main>${body}</main>
 <footer class="site-footer"><p class="disclaimer">${esc(site.disclaimer)}</p></footer>
 </body></html>`;
@@ -44,17 +46,17 @@ export function renderItemPage(pet, row, related) {
     : "";
   const relatedHtml = related.length
     ? `<section class="related"><h2>More ${esc(pet.name_plural)} foods</h2><ul>` +
-      related.map((r) => `<li><a href="/${pet.slug}/${r.slug}/">${esc(r.item)}</a></li>`).join("") +
+      related.map((r) => `<li><a href="${P}/${pet.slug}/${r.slug}/">${esc(r.item)}</a></li>`).join("") +
       `</ul></section>`
     : "";
   const body = `<article class="item">
-<nav class="crumbs"><a href="/${pet.slug}/">${esc(pet.name)}</a> / ${esc(row.item)}</nav>
+<nav class="crumbs"><a href="${P}/${pet.slug}/">${esc(pet.name)}</a> / ${esc(row.item)}</nav>
 <h1>${esc(q)}</h1>
 <p class="verdict verdict--${row.verdict}">${VERDICT_LABEL[row.verdict]}</p>
 <p class="reason">${esc(row.reason)}</p>
 ${details ? `<dl class="details">${details}</dl>` : ""}
 ${source}
-<p class="cta"><a href="/checker/">Check another food &rarr;</a></p>
+<p class="cta"><a href="${P}/checker/">Check another food &rarr;</a></p>
 ${relatedHtml}
 </article>`;
   return layout({
@@ -70,7 +72,7 @@ export function renderPetIndex(pet, rows) {
   const items = rows
     .slice()
     .sort((a, b) => a.item.localeCompare(b.item))
-    .map((r) => `<li><a href="/${pet.slug}/${r.slug}/"><span>${esc(r.item)}</span><span class="v v--${r.verdict}">${VERDICT_LABEL[r.verdict]}</span></a></li>`)
+    .map((r) => `<li><a href="${P}/${pet.slug}/${r.slug}/"><span>${esc(r.item)}</span><span class="v v--${r.verdict}">${VERDICT_LABEL[r.verdict]}</span></a></li>`)
     .join("");
   const body = `<section class="pet-index">
 <h1>Can ${esc(pet.name_plural)} eat... ?</h1>
@@ -86,10 +88,10 @@ export function renderPetIndex(pet, rows) {
 
 export function renderHome(pets) {
   const cards = pets.map((p) =>
-    `<a class="pet-card" href="/${p.slug}/"><h2>${esc(p.name)}</h2><p>${esc(p.blurb)}</p></a>`).join("");
+    `<a class="pet-card" href="${P}/${p.slug}/"><h2>${esc(p.name)}</h2><p>${esc(p.blurb)}</p></a>`).join("");
   const body = `<section class="hero"><h1>${esc(site.brand)}</h1>
 <p class="tagline">${esc(site.tagline)}</p>
-<a class="big-cta" href="/checker/">Open the safety checker</a></section>
+<a class="big-cta" href="${P}/checker/">Open the safety checker</a></section>
 <section class="pets"><h2>Pick your pet</h2><div class="pet-cards">${cards}</div></section>`;
   return layout({
     title: `${site.brand} — ${site.tagline}`,
@@ -108,7 +110,8 @@ export function renderCheckerPage(pets) {
 <div id="result" class="result" aria-live="polite"></div>
 <ul id="suggestions" class="suggestions"></ul>
 </section>
-<script src="/checker.js" type="module"></script>`;
+<script>window.__BASE__=${JSON.stringify(P)}</script>
+<script src="${P}/checker.js" type="module"></script>`;
   return layout({
     title: `Pet food safety checker | ${site.brand}`,
     description: "Type a food and your pet to instantly see if it's safe.",
