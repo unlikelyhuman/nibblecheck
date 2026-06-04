@@ -1,0 +1,2180 @@
+[
+  {
+    "slug": "acorn-squash",
+    "name": "Acorn Squash",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "alcohol",
+    "name": "Alcohol",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "alfalfa",
+    "name": "Alfalfa",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "alfalfa-hay",
+    "name": "Alfalfa hay",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "almonds",
+    "name": "Almonds",
+    "category": "nut",
+    "aliases": []
+  },
+  {
+    "slug": "apple",
+    "name": "Apple",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "apple-no-seeds",
+    "name": "Apple (no seeds)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "apple-seeds",
+    "name": "Apple seeds",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "apricot",
+    "name": "Apricot",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "apricot-no-pit",
+    "name": "Apricot (no pit)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "artichoke",
+    "name": "Artichoke",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "asparagus",
+    "name": "Asparagus",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "avocado",
+    "name": "Avocado",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "avocado-flesh",
+    "name": "Avocado flesh",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "avocado-skin-and-pit",
+    "name": "Avocado (skin and pit)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "azalea-rhododendron",
+    "name": "Azalea / Rhododendron",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "banana",
+    "name": "Banana",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "banana-baby-food",
+    "name": "Banana Baby Food",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "basil",
+    "name": "Basil",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "bean-sprouts",
+    "name": "Bean Sprouts",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "bee-pollen",
+    "name": "Bee pollen",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "beef",
+    "name": "Beef",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "beet-greens",
+    "name": "Beet greens",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "beetroot",
+    "name": "Beetroot",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "beets",
+    "name": "Beets",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "bell-pepper",
+    "name": "Bell pepper",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "bell-peppers",
+    "name": "Bell Peppers",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "berries",
+    "name": "Berries",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "birds-foot-trefoil",
+    "name": "Bird's-foot trefoil",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "black-soldier-fly-larvae",
+    "name": "Black Soldier Fly Larvae",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "black-soldier-fly-larvae-calciworms",
+    "name": "Black Soldier Fly Larvae (Calciworms)",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "blackberry",
+    "name": "Blackberry",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "blue-cheese",
+    "name": "Blue cheese",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "bluebell",
+    "name": "Bluebell",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "blueberries",
+    "name": "Blueberries",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "blueberry",
+    "name": "Blueberry",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "boiled-egg",
+    "name": "Boiled egg",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "bok-choy",
+    "name": "Bok choy",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "bok-choy-pak-choi",
+    "name": "Bok choy (pak choi)",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "bones",
+    "name": "Bones",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "bramble-blackberry-leaves",
+    "name": "Bramble (blackberry) leaves",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "brazil-nuts",
+    "name": "Brazil nuts",
+    "category": "nut",
+    "aliases": []
+  },
+  {
+    "slug": "bread",
+    "name": "Bread",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "broccoli",
+    "name": "Broccoli",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "brussels-sprouts",
+    "name": "Brussels sprouts",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "buttercup",
+    "name": "Buttercup",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "butternut-squash",
+    "name": "Butternut squash",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "butterworms",
+    "name": "Butterworms",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cabbage",
+    "name": "Cabbage",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "caffeine",
+    "name": "Caffeine",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "caffeine-coffee",
+    "name": "Caffeine / coffee",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "caffeine-coffee-tea",
+    "name": "Caffeine (coffee/tea)",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "calcium-supplement-phosphorus-free",
+    "name": "Calcium Supplement (Phosphorus-Free)",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "calciworms",
+    "name": "Calciworms",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "canned-pre-killed-insects",
+    "name": "Canned (Pre-Killed) Insects",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cantaloupe-melon",
+    "name": "Cantaloupe melon",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "carbonated-drinks",
+    "name": "Carbonated drinks",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "carrot",
+    "name": "Carrot",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "carrot-tops",
+    "name": "Carrot tops",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "cat-food",
+    "name": "Cat food",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cats-ear",
+    "name": "Cat's ear",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "cauliflower",
+    "name": "Cauliflower",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "celery",
+    "name": "Celery",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "cereal",
+    "name": "Cereal",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "cereal-grains",
+    "name": "Cereal grains",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "cheese",
+    "name": "Cheese",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "cheese-mild-plain",
+    "name": "Cheese (mild, plain)",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "cherries",
+    "name": "Cherries",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "cherries-no-pit",
+    "name": "Cherries (no pit)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "cherry",
+    "name": "Cherry",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "cherry-pits",
+    "name": "Cherry pits",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "chicken",
+    "name": "Chicken",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "chickpeas-cooked",
+    "name": "Chickpeas (cooked)",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "chickweed",
+    "name": "Chickweed",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "chicory",
+    "name": "Chicory",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "chicory-greens",
+    "name": "Chicory greens",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "chilli-pepper",
+    "name": "Chilli pepper",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "chinchilla-pellets",
+    "name": "Chinchilla pellets",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "chives",
+    "name": "Chives",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "chocolate",
+    "name": "Chocolate",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "cilantro",
+    "name": "Cilantro",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "cilantro-coriander",
+    "name": "Cilantro (coriander)",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "citrus-fruit",
+    "name": "Citrus fruit",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "citrus-fruits",
+    "name": "Citrus fruits",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "citrus-orange",
+    "name": "Citrus / orange",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "citrus-peel",
+    "name": "Citrus peel",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "clover",
+    "name": "Clover",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "coconut",
+    "name": "Coconut",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "coffee",
+    "name": "Coffee",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "coffee-and-caffeine",
+    "name": "Coffee and caffeine",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "collard-greens",
+    "name": "Collard greens",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "comfrey",
+    "name": "Comfrey",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "commercial-ferret-food",
+    "name": "Commercial ferret food",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "commercial-hamster-pellets",
+    "name": "Commercial hamster pellets",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-beans",
+    "name": "Cooked beans",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-chickpeas",
+    "name": "Cooked chickpeas",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-corn-fresh-kernels",
+    "name": "Cooked corn (fresh kernels)",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-egg",
+    "name": "Cooked egg",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-grains",
+    "name": "Cooked grains",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-lentils",
+    "name": "Cooked lentils",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-meat",
+    "name": "Cooked meat",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-meat-pinky-mice",
+    "name": "Cooked Meat / Pinky Mice",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-pasta",
+    "name": "Cooked pasta",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-potato-plain",
+    "name": "Cooked potato (plain)",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-quinoa",
+    "name": "Cooked quinoa",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "cooked-rice",
+    "name": "Cooked rice",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "coriander",
+    "name": "Coriander",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "coriander-cilantro",
+    "name": "Coriander (cilantro)",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "corn",
+    "name": "Corn",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "courgette",
+    "name": "Courgette",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "courgette-zucchini",
+    "name": "Courgette (zucchini)",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "crackers",
+    "name": "Crackers",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "cranberry",
+    "name": "Cranberry",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "cress",
+    "name": "Cress",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "crickets",
+    "name": "Crickets",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "crickets-from-outside-garden-caught",
+    "name": "Crickets from Outside (Garden-Caught)",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "cucumber",
+    "name": "Cucumber",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "daffodil",
+    "name": "Daffodil",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "daffodil-narcissus",
+    "name": "Daffodil (Narcissus)",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "dairy-cheese-milk",
+    "name": "Dairy (Cheese / Milk)",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "dairy-cheese-milk-yoghurt",
+    "name": "Dairy (cheese, milk, yoghurt)",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "dairy-milk-products",
+    "name": "Dairy / milk products",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "dairy-products",
+    "name": "Dairy products",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "dandelion",
+    "name": "Dandelion",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "dandelion-flowers",
+    "name": "Dandelion Flowers",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "dandelion-greens",
+    "name": "Dandelion greens",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "dehydrated-organ-meat-treats",
+    "name": "Dehydrated organ-meat treats",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "dill",
+    "name": "Dill",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "discoid-roaches",
+    "name": "Discoid Roaches",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "dog-biscuits-plain",
+    "name": "Dog biscuits (plain)",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "dog-food",
+    "name": "Dog food",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "dried-apple",
+    "name": "Dried apple",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "dried-beans",
+    "name": "Dried beans",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "dried-chamomile-flowers",
+    "name": "Dried chamomile flowers",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "dried-clover",
+    "name": "Dried clover",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "dried-corn",
+    "name": "Dried corn",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "dried-dandelion",
+    "name": "Dried dandelion",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "dried-fruit",
+    "name": "Dried fruit",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "dried-fruit-raisins",
+    "name": "Dried fruit (raisins)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "dried-herbs",
+    "name": "Dried herbs",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "dried-nettle",
+    "name": "Dried nettle",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "dried-or-freeze-dried-insects",
+    "name": "Dried or Freeze-Dried Insects",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "dried-raw-beans",
+    "name": "Dried (raw) beans",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "dried-root-vegetable",
+    "name": "Dried root vegetable",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "dried-rose-petals",
+    "name": "Dried rose petals",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "dried-rosehips",
+    "name": "Dried rosehips",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "dubia-roaches",
+    "name": "Dubia Roaches",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "eggplant-aubergine",
+    "name": "Eggplant (aubergine)",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "endive",
+    "name": "Endive",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "escarole",
+    "name": "Escarole",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "fatty-junk-food",
+    "name": "Fatty junk food",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "fennel",
+    "name": "Fennel",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "fig",
+    "name": "Fig",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "figs",
+    "name": "Figs",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "fireflies-lightning-bugs",
+    "name": "Fireflies (Lightning Bugs)",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "fish",
+    "name": "Fish",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "foxglove",
+    "name": "Foxglove",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "fresh-fruit",
+    "name": "Fresh fruit",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "fresh-vegetables",
+    "name": "Fresh vegetables",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "fruit-any",
+    "name": "Fruit (Any)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "fruit-pits-cherry-plum-apricot-peach",
+    "name": "Fruit pits (cherry, plum, apricot, peach)",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "garlic",
+    "name": "Garlic",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "ginger",
+    "name": "Ginger",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "goji-berries",
+    "name": "Goji berries",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "grapefruit",
+    "name": "Grapefruit",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "grapes",
+    "name": "Grapes",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "grass-and-grass-hay",
+    "name": "Grass and grass hay",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "grass-hay",
+    "name": "Grass hay",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "green-beans",
+    "name": "Green beans",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "green-leaf-lettuce",
+    "name": "Green leaf lettuce",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "green-potato",
+    "name": "Green potato",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "green-tomato",
+    "name": "Green tomato",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "green-unripe-banana",
+    "name": "Green (unripe) banana",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "hawkbit",
+    "name": "Hawkbit",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "hay",
+    "name": "Hay",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "heart",
+    "name": "Heart",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "hemlock",
+    "name": "Hemlock",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "hibiscus",
+    "name": "Hibiscus",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "hibiscus-flowers",
+    "name": "Hibiscus Flowers",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "high-fat-high-sugar-table-foods",
+    "name": "High-fat / high-sugar table foods",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "honey",
+    "name": "Honey",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "honeysuckle",
+    "name": "Honeysuckle",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "hornworms",
+    "name": "Hornworms",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "ice-cream",
+    "name": "Ice cream",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "iceberg-lettuce",
+    "name": "Iceberg lettuce",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "iceberg-only-salad-mixes",
+    "name": "Iceberg-Only Salad Mixes",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "ivy",
+    "name": "Ivy",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "kale",
+    "name": "Kale",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "kitten-food",
+    "name": "Kitten food",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "kiwi",
+    "name": "Kiwi",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "kohlrabi",
+    "name": "Kohlrabi",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "lamb",
+    "name": "Lamb",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "leafy-greens",
+    "name": "Leafy greens",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "leafy-greens-any",
+    "name": "Leafy Greens (Any)",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "lean-cooked-meat",
+    "name": "Lean cooked meat",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "leek",
+    "name": "Leek",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "lemon",
+    "name": "Lemon",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "lentils-cooked",
+    "name": "Lentils (cooked)",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "lettuce",
+    "name": "Lettuce",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "lettuce-deep-green",
+    "name": "Lettuce (deep green)",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "liquorice",
+    "name": "Liquorice",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "live-prey-insects",
+    "name": "Live prey insects",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "liver",
+    "name": "Liver",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "locusts",
+    "name": "Locusts",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "mallow",
+    "name": "Mallow",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "mango",
+    "name": "Mango",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "meadow-hay",
+    "name": "Meadow hay",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "mealworms",
+    "name": "Mealworms",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "meat",
+    "name": "Meat",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "melon",
+    "name": "Melon",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "melon-cantaloupe",
+    "name": "Melon (cantaloupe)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "milk",
+    "name": "Milk",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "millet",
+    "name": "Millet",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "millet-spray",
+    "name": "Millet spray",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "mint",
+    "name": "Mint",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "mixed-seeds",
+    "name": "Mixed seeds",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "moldy-food",
+    "name": "Moldy food",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "moldy-or-spoiled-food",
+    "name": "Moldy or spoiled food",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "muesli-mix",
+    "name": "Muesli mix",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "muesli-style-hamster-mix",
+    "name": "Muesli-style hamster mix",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "mushroom",
+    "name": "Mushroom",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "mushrooms",
+    "name": "Mushrooms",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "mustard-greens",
+    "name": "Mustard greens",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "nasturtium",
+    "name": "Nasturtium",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "nettle",
+    "name": "Nettle",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "nuts",
+    "name": "Nuts",
+    "category": "nut",
+    "aliases": []
+  },
+  {
+    "slug": "oak-leaves",
+    "name": "Oak Leaves",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "oats",
+    "name": "Oats",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "okra",
+    "name": "Okra",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "oleander",
+    "name": "Oleander",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "onion",
+    "name": "Onion",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "opuntia-prickly-pear-cactus-pad",
+    "name": "Opuntia (prickly pear) cactus pad",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "orange",
+    "name": "Orange",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "orange-citrus",
+    "name": "Orange / citrus",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "oregano",
+    "name": "Oregano",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "organ-meat",
+    "name": "Organ meat",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "other-human-food",
+    "name": "Other human food",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "pansy",
+    "name": "Pansy",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "papaya",
+    "name": "Papaya",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "parsley",
+    "name": "Parsley",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "parsnip",
+    "name": "Parsnip",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "pasta",
+    "name": "Pasta",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "peach",
+    "name": "Peach",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "peach-no-pit",
+    "name": "Peach (no pit)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "peanut-butter",
+    "name": "Peanut butter",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "peanuts",
+    "name": "Peanuts",
+    "category": "nut",
+    "aliases": []
+  },
+  {
+    "slug": "peanuts-raw",
+    "name": "Peanuts (raw)",
+    "category": "nut",
+    "aliases": []
+  },
+  {
+    "slug": "pear",
+    "name": "Pear",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "peas",
+    "name": "Peas",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "peas-and-beans",
+    "name": "Peas and beans",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "peas-pea-pods",
+    "name": "Peas (pea pods)",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "pellets",
+    "name": "Pellets",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "pellets-formulated-parrot-diet",
+    "name": "Pellets (formulated parrot diet)",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "pepper-bell-pepper",
+    "name": "Pepper (bell pepper)",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "phoenix-worms",
+    "name": "Phoenix Worms",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "pineapple",
+    "name": "Pineapple",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "pinkie-mice",
+    "name": "Pinkie Mice",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "plantain-leaves",
+    "name": "Plantain Leaves",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "plantain-ribwort",
+    "name": "Plantain (ribwort)",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "plantain-ribwort-greater",
+    "name": "Plantain (ribwort/greater)",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "plum",
+    "name": "Plum",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "plum-no-pit",
+    "name": "Plum (no pit)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "pomegranate",
+    "name": "Pomegranate",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "poppy-seeds",
+    "name": "Poppy seeds",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "potato",
+    "name": "Potato",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "potato-cooked",
+    "name": "Potato (cooked)",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "potato-leaves",
+    "name": "Potato leaves",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "prickly-pear",
+    "name": "Prickly Pear",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "pumpkin",
+    "name": "Pumpkin",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "quinoa",
+    "name": "Quinoa",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "quinoa-cooked",
+    "name": "Quinoa (cooked)",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "radish",
+    "name": "Radish",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "raisins",
+    "name": "Raisins",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "raspberries",
+    "name": "Raspberries",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "raspberry",
+    "name": "Raspberry",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "rat-nuggets-complete-rat-food",
+    "name": "Rat nuggets (complete rat food)",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "raw-beans-dried-uncooked",
+    "name": "Raw beans (dried/uncooked)",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "raw-bones-whole-prey",
+    "name": "Raw bones (whole prey)",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "raw-bulk-tofu",
+    "name": "Raw bulk tofu",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "raw-egg",
+    "name": "Raw egg",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "raw-meat",
+    "name": "Raw meat",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "raw-potato",
+    "name": "Raw potato",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "raw-red-cabbage",
+    "name": "Raw red cabbage",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "raw-squash",
+    "name": "Raw squash",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "raw-sweet-potato",
+    "name": "Raw sweet potato",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "rhododendron",
+    "name": "Rhododendron",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "rhubarb",
+    "name": "Rhubarb",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "rhubarb-leaves",
+    "name": "Rhubarb leaves",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "rice",
+    "name": "Rice",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "roaches-feeder",
+    "name": "Roaches (Feeder)",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "rocket-arugula",
+    "name": "Rocket (arugula)",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "rolled-oats",
+    "name": "Rolled oats",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "romaine-lettuce",
+    "name": "Romaine lettuce",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "rose-petals",
+    "name": "Rose petals",
+    "category": "flower",
+    "aliases": []
+  },
+  {
+    "slug": "rosemary",
+    "name": "Rosemary",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "sage",
+    "name": "Sage",
+    "category": "herb",
+    "aliases": []
+  },
+  {
+    "slug": "salt",
+    "name": "Salt",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "salt-and-salty-foods",
+    "name": "Salt and salty foods",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "salt-salty-foods",
+    "name": "Salt / salty foods",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "seaweed",
+    "name": "Seaweed",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "sedum",
+    "name": "Sedum",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "seed-mix",
+    "name": "Seed mix",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "seeds",
+    "name": "Seeds",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "seeds-mixes",
+    "name": "Seeds (mixes)",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "seeds-sunflower-etc",
+    "name": "Seeds (sunflower etc.)",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "shredded-wheat",
+    "name": "Shredded wheat",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "silkworms",
+    "name": "Silkworms",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "sow-thistle",
+    "name": "Sow thistle",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "spicy-peppers",
+    "name": "Spicy peppers",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "spinach",
+    "name": "Spinach",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "spring-greens",
+    "name": "Spring greens",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "spring-onion",
+    "name": "Spring onion",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "sprouts",
+    "name": "Sprouts",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "squash",
+    "name": "Squash",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "sticky-foods-honey-toffee",
+    "name": "Sticky foods (honey, toffee)",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "strawberries",
+    "name": "Strawberries",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "strawberry",
+    "name": "Strawberry",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "sugar",
+    "name": "Sugar",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "sugary-and-fatty-table-foods",
+    "name": "Sugary and fatty table foods",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "sugary-fatty-salty-foods",
+    "name": "Sugary / fatty / salty foods",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "sugary-processed-foods",
+    "name": "Sugary processed foods",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "sugary-salty-or-sticky-human-snacks",
+    "name": "Sugary, salty or sticky human snacks",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "sugary-treats",
+    "name": "Sugary treats",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "sunflower-seeds",
+    "name": "Sunflower seeds",
+    "category": "seed",
+    "aliases": []
+  },
+  {
+    "slug": "superworms",
+    "name": "Superworms",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "sweet-potato",
+    "name": "Sweet potato",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "sweet-potato-cooked",
+    "name": "Sweet potato (cooked)",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "sweetcorn",
+    "name": "Sweetcorn",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "sweets-and-candy",
+    "name": "Sweets and candy",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "swiss-chard",
+    "name": "Swiss chard",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "tea",
+    "name": "Tea",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "timothy-hay",
+    "name": "Timothy hay",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "tomato",
+    "name": "Tomato",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "tomato-fruit",
+    "name": "Tomato (fruit)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "tomato-leaves",
+    "name": "Tomato leaves",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "tomato-leaves-and-plant",
+    "name": "Tomato leaves and plant",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "tomato-ripe",
+    "name": "Tomato (ripe)",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "tree-branches-from-unknown-trees",
+    "name": "Tree branches from unknown trees",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "turkey",
+    "name": "Turkey",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "turnip-greens",
+    "name": "Turnip greens",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "uncooked-raw-beans",
+    "name": "Uncooked (raw) beans",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "unsalted-popcorn",
+    "name": "Unsalted popcorn",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "vegetables-any",
+    "name": "Vegetables (Any)",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "vetch",
+    "name": "Vetch",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "walnuts",
+    "name": "Walnuts",
+    "category": "nut",
+    "aliases": []
+  },
+  {
+    "slug": "watercress",
+    "name": "Watercress",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "watermelon",
+    "name": "Watermelon",
+    "category": "fruit",
+    "aliases": []
+  },
+  {
+    "slug": "waxworms",
+    "name": "Waxworms",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "wet-or-powdered-food",
+    "name": "Wet or powdered food",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "wheat-biscuit",
+    "name": "Wheat biscuit",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "white-clover",
+    "name": "White clover",
+    "category": "leafy-green",
+    "aliases": []
+  },
+  {
+    "slug": "whole-grain-cracker",
+    "name": "Whole grain cracker",
+    "category": "grain",
+    "aliases": []
+  },
+  {
+    "slug": "whole-prey-mice-rats",
+    "name": "Whole prey (mice/rats)",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "wild-caught-insects",
+    "name": "Wild-Caught Insects",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "wild-hornworms",
+    "name": "Wild Hornworms",
+    "category": "protein",
+    "aliases": []
+  },
+  {
+    "slug": "xylitol",
+    "name": "Xylitol",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "xylitol-sugar-free-sweetener",
+    "name": "Xylitol (sugar-free sweetener)",
+    "category": "household",
+    "aliases": []
+  },
+  {
+    "slug": "yew",
+    "name": "Yew",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "yoghurt-drops",
+    "name": "Yoghurt drops",
+    "category": "other",
+    "aliases": []
+  },
+  {
+    "slug": "yogurt",
+    "name": "Yogurt",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "yogurt-drops",
+    "name": "Yogurt drops",
+    "category": "dairy",
+    "aliases": []
+  },
+  {
+    "slug": "zucchini",
+    "name": "Zucchini",
+    "category": "vegetable",
+    "aliases": []
+  },
+  {
+    "slug": "zucchini-courgette",
+    "name": "Zucchini (courgette)",
+    "category": "vegetable",
+    "aliases": []
+  }
+]

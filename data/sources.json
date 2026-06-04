@@ -1,0 +1,87 @@
+{
+  "small-mammal": {
+    "authorities": [
+      { "name": "PDSA", "domain": "pdsa.org.uk" },
+      { "name": "RSPCA", "domain": "rspca.org.uk" },
+      { "name": "VCA Animal Hospitals", "domain": "vcahospitals.com" },
+      { "name": "Oxbow Animal Health", "domain": "oxbowanimalhealth.com" },
+      { "name": "House Rabbit Society", "domain": "rabbit.org" },
+      { "name": "Lafeber", "domain": "lafeber.com" },
+      { "name": "ASPCA", "domain": "aspca.org" },
+      { "name": "PetMD", "domain": "petmd.com" }
+    ],
+    "allowed_domains": [
+      "pdsa.org.uk",
+      "rspca.org.uk",
+      "rspca.org.au",
+      "rabbit.org",
+      "oxbowanimalhealth.com",
+      "guineapiggles.co.uk",
+      "vcahospitals.com",
+      "burgesspetcare.com",
+      "lafeber.com",
+      "wpvet.com",
+      "socalguineapigrescue.org",
+      "petmd.com",
+      "safechinchillas.org",
+      "liveoakvet.com",
+      "walkervillevet.com.au",
+      "aboutpetrats.com",
+      "aspca.org",
+      "nfrs.org"
+    ]
+  },
+  "bird": {
+    "authorities": [
+      { "name": "Lafeber", "domain": "lafeber.com" },
+      { "name": "VCA Animal Hospitals", "domain": "vcahospitals.com" },
+      { "name": "RSPCA", "domain": "rspca.org.uk" },
+      { "name": "Avian & Exotic Animal Vet", "domain": "avianexoticsvet.com" },
+      { "name": "Exotic Animal Veterinary Center", "domain": "exoticanimalveterinarycenter.com" },
+      { "name": "Best Friends Animal Society", "domain": "bestfriends.org" },
+      { "name": "PetMD", "domain": "petmd.com" }
+    ],
+    "allowed_domains": [
+      "lafeber.com",
+      "vcahospitals.com",
+      "avianexoticsvet.com",
+      "exoticanimalveterinarycenter.com",
+      "rspca.org.uk",
+      "bestfriends.org",
+      "omlet.co.uk",
+      "petmd.com",
+      "hepper.com"
+    ]
+  },
+  "reptile": {
+    "authorities": [
+      { "name": "VCA Animal Hospitals", "domain": "vcahospitals.com" },
+      { "name": "ReptiFiles", "domain": "reptifiles.com" },
+      { "name": "Tortoise Trust", "domain": "tortoisetrust.org" },
+      { "name": "UC Davis Veterinary Medicine", "domain": "ucdavis.edu" },
+      { "name": "NC State Veterinary Hospital", "domain": "ncsu.edu" },
+      { "name": "University of Illinois Veterinary Medicine", "domain": "illinois.edu" },
+      { "name": "The Tortoise Table", "domain": "thetortoisetable.org.uk" },
+      { "name": "RSPCA", "domain": "rspca.org.uk" },
+      { "name": "PetMD", "domain": "petmd.com" }
+    ],
+    "allowed_domains": [
+      "vcahospitals.com",
+      "reptifiles.com",
+      "tortoisetrust.org",
+      "tortoisetrust.com",
+      "sawneevet.com",
+      "petmd.com",
+      "ucdavis.edu",
+      "ncsu.edu",
+      "rspca.org.uk",
+      "rspca.org.au",
+      "tortoisegroup.org",
+      "zenhabitats.com",
+      "illinois.edu",
+      "thetortoisespot.com",
+      "azeah.com",
+      "thetortoisetable.org.uk"
+    ]
+  }
+}

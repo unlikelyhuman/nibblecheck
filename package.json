@@ -5,6 +5,9 @@
   "private": true,
   "scripts": {
     "test": "node --test",
-    "build": "node src/build.js"
+    "build": "node src/build.js",
+    "bootstrap-foods": "node scripts/bootstrap-foods.js",
+    "verify-sources": "node scripts/verify-sources.js",
+    "ingest": "node scripts/ingest.js"
   }
 }

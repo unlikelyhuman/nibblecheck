@@ -19,6 +19,8 @@ jobs:
         with:
           node-version: 22
       - run: npm test
+      # Separate step: dead source links fail the deploy; bot-blocked (live) hosts are advisory.
+      - run: npm run verify-sources
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

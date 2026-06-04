@@ -7,6 +7,7 @@ const ok = {
   category: "vegetable", verdict: "safe", reason: "Vitamin C.",
   quantity: "A few slices", frequency: "Daily", warning_signs: "",
   source_name: "RSPCA", source_url: "https://www.rspca.org.uk/x",
+  last_reviewed: "2026-06-04",
 };
 
 test("accepts a valid row", () => {

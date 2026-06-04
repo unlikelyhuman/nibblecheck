@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { dirname } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { site } from "../site.config.js";
-import { validateCollection } from "./lib/validate.js";
+import { validateCollection, validateAgainstFoods, validateSourceDomains } from "./lib/validate.js";
 import {
   renderItemPage, renderPetIndex, renderHome, renderCheckerPage,
 } from "./lib/render.js";
@@ -20,10 +20,22 @@ function writePage(relPath, html) {
 export async function build() {
   const pets = JSON.parse(readFileSync(`${root}/data/pets.json`));
   const items = JSON.parse(readFileSync(`${root}/data/items.json`));
+  const foods = JSON.parse(readFileSync(`${root}/data/foods.json`));
+  const sources = JSON.parse(readFileSync(`${root}/data/sources.json`));
   const petSlugs = pets.map((p) => p.slug);
 
   const errs = validateCollection(items, petSlugs);
   if (errs.length) throw new Error(`Dataset invalid:\n${errs.join("\n")}`);
+
+  // Hard gate: every published verdict maps to a canonical food (same category).
+  const foodErrs = validateAgainstFoods(items, foods);
+  if (foodErrs.length) throw new Error(`Master-list gate failed:\n${foodErrs.join("\n")}`);
+
+  // Soft gate: source hosts should match the pet's taxon allowlist (warn, don't block).
+  const domainWarnings = validateSourceDomains(items, pets, sources);
+  if (domainWarnings.length) {
+    console.warn(`Source-domain warnings (${domainWarnings.length}):\n${domainWarnings.join("\n")}`);
+  }
 
   mkdirSync(OUT, { recursive: true });
   const urls = [`${site.baseUrl}/`, `${site.baseUrl}/checker/`];
