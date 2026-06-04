@@ -54,6 +54,7 @@ export async function build() {
 ${urls.map((u) => `  <url><loc>${u}</loc></url>`).join("\n")}
 </urlset>`;
   writeFileSync(`${OUT}/sitemap.xml`, sitemap);
+  writeFileSync(`${OUT}/robots.txt`, `User-agent: *\nAllow: /\nSitemap: ${site.baseUrl}/sitemap.xml\n`);
 
   copyFileSync(`${root}/assets/styles.css`, `${OUT}/styles.css`);
   copyFileSync(`${root}/assets/checker.js`, `${OUT}/checker.js`);
