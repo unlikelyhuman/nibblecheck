@@ -61,3 +61,18 @@ h1{font-size:30px;line-height:1.2;margin:.2em 0 .4em}
 .cta{margin-top:18px}
 .site-footer{max-width:760px;margin:24px auto;padding:24px;border-top:1px solid var(--line)}
 .disclaimer{font-size:13px;color:var(--grey)}
+/* --- Per-animal hub (renderPetIndex) --- */
+.hub-overview{font-size:18px;margin:.2em 0 1em}
+.hub-counts{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-wrap:wrap;gap:10px}
+.hub-count{padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);font-size:14px;color:var(--grey)}
+.hub-count-n{font-size:20px;font-weight:800;display:block;line-height:1.1}
+.hub-count--safe{background:#eaf6ee;border-color:#bfe3c9}.hub-count--safe .hub-count-n{color:var(--green)}
+.hub-count--moderation{background:#fbf3e0;border-color:#ecd9a8}.hub-count--moderation .hub-count-n{color:var(--amber)}
+.hub-count--never{background:#fbeaea;border-color:#eec2c2}.hub-count--never .hub-count-n{color:var(--red)}
+.hub-count--ask_vet{background:#eef0f3;border-color:#d6dae1}.hub-count--ask_vet .hub-count-n{color:var(--grey)}
+.hub-principle{margin:0 0 22px;padding:12px 16px;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--green);border-radius:0 10px 10px 0;color:var(--ink)}
+.best-foods,.toxic-list,.full-list{margin:22px 0}
+.best-foods ul,.toxic-list ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.best-foods a,.toxic-list a{display:inline-block;padding:6px 12px;background:var(--card);border:1px solid var(--line);border-radius:20px;text-decoration:none;font-size:14px;color:var(--ink)}
+.toxic-list a{background:#fbeaea;border-color:#eec2c2;color:#7d2420}
+.last-reviewed{font-size:13px;color:var(--grey);margin:6px 0 18px}

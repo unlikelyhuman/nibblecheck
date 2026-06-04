@@ -21,4 +21,16 @@ test("build emits pages, sitemap and checker data", async () => {
   assert.ok(Array.isArray(data) && data[0].verdict);
   const sitemap = readFileSync(`${out}sitemap.xml`, "utf8");
   assert.match(sitemap, /guinea-pig\/bell-pepper/);
+
+  // SEO-depth must not add pages: URL count stays fixed.
+  assert.equal(result.urlCount, 814, "URL count must stay 814 (no new page types)");
+
+  // Hub page carries FAQPage + BreadcrumbList; item page carries dateModified.
+  const hub = readFileSync(`${out}guinea-pig/index.html`, "utf8");
+  assert.match(hub, /"@type":"FAQPage"/);
+  assert.match(hub, /"@type":"BreadcrumbList"/);
+  assert.match(hub, /toxic-list/);
+  const item = readFileSync(`${out}guinea-pig/bell-pepper/index.html`, "utf8");
+  assert.match(item, /"@type":"BreadcrumbList"/);
+  assert.match(item, /"dateModified"/);
 });
