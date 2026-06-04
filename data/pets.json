@@ -5,5 +5,12 @@
     "name_plural": "guinea pigs",
     "blurb": "Fragile guts and a daily vitamin C need — check before you feed.",
     "intro": "Guinea pigs can't make their own vitamin C and have sensitive digestion, so the right vegetables and fruits matter. Every verdict below cites a veterinary or rescue source."
+  },
+  {
+    "slug": "rabbit",
+    "name": "Rabbit",
+    "name_plural": "rabbits",
+    "blurb": "Hay-and-greens herbivores prone to gut stasis — sugar and the wrong foods are the danger.",
+    "intro": "A rabbit's diet should be mostly hay, with a large daily handful of leafy greens and only small amounts of veg and fruit as treats. Unlike guinea pigs, rabbits make their own vitamin C and tolerate brassicas — but they're very prone to gut stasis, so sugar and starch are risky. Every verdict below cites a veterinary or rescue source."
   }
 ]
