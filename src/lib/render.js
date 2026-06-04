@@ -101,8 +101,9 @@ export function renderHome(pets) {
   });
 }
 
-export function renderCheckerPage(pets) {
+export function renderCheckerPage(pets, version = "") {
   const options = pets.map((p) => `<option value="${p.slug}">${esc(p.name)}</option>`).join("");
+  const v = version ? `?v=${version}` : "";
   const body = `<section class="checker">
 <h1>Pet food safety checker</h1>
 <label>My pet is a <select id="pet">${options}</select></label>
@@ -110,8 +111,8 @@ export function renderCheckerPage(pets) {
 <div id="result" class="result" aria-live="polite"></div>
 <ul id="suggestions" class="suggestions"></ul>
 </section>
-<script>window.__BASE__=${JSON.stringify(P)}</script>
-<script src="${P}/checker.js" type="module"></script>`;
+<script>window.__BASE__=${JSON.stringify(P)};window.__DATA_V__=${JSON.stringify(version)}</script>
+<script src="${P}/checker.js${v}" type="module"></script>`;
   return layout({
     title: `Pet food safety checker | ${site.brand}`,
     description: "Type a food and your pet to instantly see if it's safe.",

@@ -1,4 +1,5 @@
 import { readFileSync, mkdirSync, writeFileSync, copyFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { dirname } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { site } from "../site.config.js";
@@ -27,8 +28,12 @@ export async function build() {
   mkdirSync(OUT, { recursive: true });
   const urls = [`${site.baseUrl}/`, `${site.baseUrl}/checker/`];
 
+  // Content-hash of the dataset — busts the browser cache of checker-data.json
+  // and checker.js whenever the data actually changes.
+  const version = createHash("sha1").update(JSON.stringify(items)).digest("hex").slice(0, 10);
+
   writePage("index.html", renderHome(pets));
-  writePage("checker/index.html", renderCheckerPage(pets));
+  writePage("checker/index.html", renderCheckerPage(pets, version));
 
   let pageCount = 0;
   for (const pet of pets) {

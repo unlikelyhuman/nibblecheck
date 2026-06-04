@@ -14,12 +14,14 @@ const LABEL = { safe: "✅ Safe", moderation: "⚠️ In moderation", never: "�
 // DOM wiring only runs in the browser.
 if (typeof document !== "undefined") {
   const BASE = (typeof window !== "undefined" && window.__BASE__) || "";
+  const V = (typeof window !== "undefined" && window.__DATA_V__) || "";
   const petEl = document.getElementById("pet");
   const foodEl = document.getElementById("food");
   const resultEl = document.getElementById("result");
   const sugEl = document.getElementById("suggestions");
   let data = [];
-  fetch(`${BASE}/checker-data.json`).then((r) => r.json()).then((d) => { data = d; render(); });
+  fetch(`${BASE}/checker-data.json${V ? `?v=${V}` : ""}`)
+    .then((r) => r.json()).then((d) => { data = d; render(); });
 
   function render() {
     const { exact, suggestions } = matchFood(data, petEl.value, foodEl.value);
