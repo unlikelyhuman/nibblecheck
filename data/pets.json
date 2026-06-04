@@ -12,5 +12,75 @@
     "name_plural": "rabbits",
     "blurb": "Hay-and-greens herbivores prone to gut stasis — sugar and the wrong foods are the danger.",
     "intro": "A rabbit's diet should be mostly hay, with a large daily handful of leafy greens and only small amounts of veg and fruit as treats. Unlike guinea pigs, rabbits make their own vitamin C and tolerate brassicas — but they're very prone to gut stasis, so sugar and starch are risky. Every verdict below cites a veterinary or rescue source."
+  },
+  {
+    "slug": "bearded-dragon",
+    "name": "Bearded Dragon",
+    "name_plural": "bearded dragons",
+    "blurb": "Bearded dragons are omnivores: adults eat mostly leafy greens and vegetables with some feeder insects, while juveniles eat more insects.",
+    "intro": "Bearded dragons are omnivorous lizards whose diet shifts with age — hatchlings and juveniles need mostly gut-loaded, calcium-dusted feeder insects, while adults eat predominantly dark leafy greens and vegetables with insects and only occasional fruit. Every verdict below is drawn from a reptile/exotic vet practice or vet-reviewed reference and cited with its exact source, with reptile-specific factors such as calcium:phosphorus ratio, oxalates and goitrogens reflected where the source states them."
+  },
+  {
+    "slug": "budgie",
+    "name": "Budgie",
+    "name_plural": "budgies",
+    "blurb": "What's safe and unsafe to feed your budgie, sourced from avian vets.",
+    "intro": "A healthy budgie eats mainly formulated pellets plus a small amount of seed, with fresh vegetables and tiny portions of fruit making up no more than about a fifth to a quarter of the daily diet. Every verdict below is taken from an avian veterinary or recognised welfare source and reflects how small a budgie is, so portions are always tiny."
+  },
+  {
+    "slug": "chinchilla",
+    "name": "Chinchilla",
+    "name_plural": "chinchillas",
+    "blurb": "Chinchillas have an extremely sensitive gut and tolerate sugar, fat and moisture very poorly, so most fresh fruit and veg are risky.",
+    "intro": "A chinchilla's diet is almost entirely good-quality grass hay plus a small daily amount of grass-based chinchilla pellets, with only tiny dried treats on occasion. Every verdict below is sourced to a veterinary or animal-welfare authority, and you should never change a chinchilla's diet suddenly."
+  },
+  {
+    "slug": "cockatiel",
+    "name": "Cockatiel",
+    "name_plural": "cockatiels",
+    "blurb": "Which everyday foods are safe, risky, or toxic for cockatiels.",
+    "intro": "Cockatiels do best on a formulated pellet base (roughly 75-80% of the diet) with fresh vegetables, leafy greens, and smaller amounts of fruit, plus limited seeds. Every verdict below is drawn from avian veterinary and bird-welfare sources, and any food we could not confirm against an authoritative page is marked 'ask a vet' rather than guessed."
+  },
+  {
+    "slug": "ferret",
+    "name": "Ferret",
+    "name_plural": "ferrets",
+    "blurb": "Ferrets are obligate carnivores that thrive on high animal protein and fat and cannot properly digest plant matter, fibre or sugar.",
+    "intro": "Ferrets are strict (obligate) carnivores with a very short, fast gut, so their diet must be built on meat, poultry, organ and egg or a quality ferret food, while most fruit, vegetables, grains, sugars and dairy are unsuitable or harmful. Every verdict below is taken from authoritative ferret-diet and toxic-food guidance from veterinary and welfare sources."
+  },
+  {
+    "slug": "hamster",
+    "name": "Hamster",
+    "name_plural": "hamsters",
+    "blurb": "Omnivores that thrive on a commercial hamster mix, with sugary, acidic and sticky foods posing the biggest risks.",
+    "intro": "Hamsters are omnivores whose staple should be a complete commercial hamster pellet or mix, supplemented with only a teaspoon or two of safe vegetables, fruit, herbs and occasional protein each day. Every verdict below is taken from a named authoritative source, and where reputable guidance conflicts or is missing we say to ask a vet rather than guess."
+  },
+  {
+    "slug": "leopard-gecko",
+    "name": "Leopard Gecko",
+    "name_plural": "leopard geckos",
+    "blurb": "Leopard geckos are strict insectivores that eat only live insects, not fruits, vegetables or greens.",
+    "intro": "Leopard geckos are strict insectivores: their diet should consist solely of appropriate live, gut-loaded and calcium-dusted feeder insects, and they cannot digest plant matter such as fruit, vegetables or leafy greens. Every verdict below is drawn from a vet practice or vet-reviewed reptile reference and cited with its exact source."
+  },
+  {
+    "slug": "parrot",
+    "name": "Parrot",
+    "name_plural": "parrots",
+    "blurb": "What medium and large parrots like African greys and Amazons can safely eat.",
+    "intro": "A healthy parrot diet is built on formulated pellets (roughly 60-75% of intake) plus a daily variety of fresh vegetables, some fruit, and only limited seeds and nuts, which are high in fat. Every verdict below is sourced to avian veterinary and recognised parrot-welfare authorities such as VCA Hospitals, Lafeber and the RSPCA."
+  },
+  {
+    "slug": "rat",
+    "name": "Rat",
+    "name_plural": "rats",
+    "blurb": "Rats are omnivores that thrive on a rat-specific nugget or block diet supplemented with small amounts of vegetables, fruit, cooked grains and lean protein.",
+    "intro": "Pet rats are omnivores: the foundation of their diet should be a complete commercial rat nugget or lab block, supplemented in small amounts with vegetables, fruit, cooked grains, cooked egg and lean cooked meat. Every verdict below is drawn from an animal-welfare organisation or veterinary source and cited with its exact URL; where authoritative guidance is unclear the verdict is marked ask_vet."
+  },
+  {
+    "slug": "tortoise",
+    "name": "Tortoise",
+    "name_plural": "tortoises",
+    "blurb": "Tortoises are herbivores that thrive on a high-fibre, low-sugar diet of weeds, leafy greens and edible flowers.",
+    "intro": "Tortoises are herbivores whose ideal diet is fibrous weeds, dark leafy greens and edible flowers; this guide defaults to common Mediterranean species (Hermann's, spur-thighed, marginated), which need high-fibre, low-protein, low-sugar food and should generally avoid fruit. Diet varies by species, so tropical tortoises like red-foots tolerate some fruit and you should ask a reptile vet for species-specific advice; every verdict below is taken from a named authoritative source."
   }
 ]

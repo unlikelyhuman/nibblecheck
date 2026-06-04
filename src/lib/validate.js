@@ -1,6 +1,7 @@
 const VERDICTS = new Set(["safe", "moderation", "never", "ask_vet"]);
 const CATEGORIES = new Set([
-  "vegetable", "fruit", "herb", "leafy-green", "household", "other",
+  "vegetable", "fruit", "leafy-green", "herb", "flower", "grain", "seed",
+  "nut", "protein", "dairy", "household", "other",
 ]);
 const REQUIRED = ["pet", "item", "slug", "category", "verdict", "reason"];
 

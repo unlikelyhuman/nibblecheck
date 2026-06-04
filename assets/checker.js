@@ -50,8 +50,12 @@ if (typeof document !== "undefined") {
   function petMatches() {
     const q = petInput.value.trim().toLowerCase();
     if (!q) return PETS;
-    return PETS.filter((p) =>
-      p.name.toLowerCase().includes(q) || p.name_plural.toLowerCase().includes(q));
+    const words = (p) => `${p.name} ${p.name_plural}`.toLowerCase().split(/[\s-]+/);
+    // Prefer word-prefix matches ("r" -> Rabbit, Rat; "ge" -> Leopard Gecko).
+    const prefix = PETS.filter((p) => words(p).some((w) => w.startsWith(q)));
+    if (prefix.length) return prefix;
+    // Fall back to substring so "tiel" still finds Cockatiel.
+    return PETS.filter((p) => `${p.name} ${p.name_plural}`.toLowerCase().includes(q));
   }
 
   function openPetList() {
