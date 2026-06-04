@@ -7,7 +7,7 @@ export const site = {
   baseUrl: "https://unlikelyhuman.github.io/nibblecheck",
   // Paste the token from Google Search Console (Settings → Ownership verification →
   // HTML tag) here, then deploy — every page emits the verification meta. Leave "" to omit.
-  googleSiteVerification: "",
+  googleSiteVerification: "y6kUwNYBhP_FsJNsG9xpbH2NDW3QWc4S7W38q9yWPFo",
   disclaimer:
     "This information is for general guidance only and is not a substitute " +
     "for professional veterinary advice. When in doubt, ask your vet.",
