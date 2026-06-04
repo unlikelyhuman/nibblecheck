@@ -47,6 +47,14 @@ function resolveName(nameCounts) {
 
 function main() {
   const items = JSON.parse(readFileSync(`${root}/data/items.json`));
+  // Reverse the normalization merge map so each canonical food records its deprecated aliases.
+  let aliasMap = {};
+  try {
+    const { merges } = JSON.parse(readFileSync(`${root}/data/food-aliases.json`));
+    for (const [from, to] of Object.entries(merges)) (aliasMap[to] ||= []).push(from);
+    for (const k of Object.keys(aliasMap)) aliasMap[k].sort();
+  } catch { /* aliases optional */ }
+
   const bySlug = new Map();
   for (const r of items) {
     if (!bySlug.has(r.slug)) bySlug.set(r.slug, { cats: {}, names: {} });
@@ -86,7 +94,7 @@ function main() {
       console.error(`ERROR ${slug}: resolved category '${category}' not in enum`);
       process.exit(1);
     }
-    foods.push({ slug, name, category, aliases: [] });
+    foods.push({ slug, name, category, aliases: aliasMap[slug] || [] });
   }
 
   if (unresolved.length) {

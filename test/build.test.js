@@ -25,8 +25,8 @@ test("build emits pages, sitemap and checker data", async () => {
   assert.match(sitemap, /<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/);
   assert.equal((sitemap.match(/<lastmod>/g) || []).length, result.urlCount, "every URL needs a lastmod");
 
-  // SEO-depth must not add pages: URL count stays fixed.
-  assert.equal(result.urlCount, 814, "URL count must stay 814 (no new page types)");
+  // Fixed URL count after vocabulary normalization: home + checker + 12 pets + 757 item pages.
+  assert.equal(result.urlCount, 771, "URL count (2 + 12 pets + 757 items)");
 
   // Hub page carries FAQPage + BreadcrumbList; item page carries dateModified.
   const hub = readFileSync(`${out}guinea-pig/index.html`, "utf8");

@@ -35,17 +35,35 @@ const items = JSON.parse(readFileSync(`${root}/data/items.json`));
 const pets = JSON.parse(readFileSync(`${root}/data/pets.json`));
 const foods = JSON.parse(readFileSync(`${root}/data/foods.json`));
 const sources = JSON.parse(readFileSync(`${root}/data/sources.json`));
+const vocab = JSON.parse(readFileSync(`${root}/data/food-aliases.json`));
 const petSlugs = pets.map((p) => p.slug);
 
 let incoming = JSON.parse(readFileSync(resolve(inputPath)));
 if (!Array.isArray(incoming)) die("research output must be a JSON array of rows");
 
-// 1) Normalise: regenerate slug from item; stamp last_reviewed if missing.
-incoming = incoming.map((r) => ({
-  ...r,
-  slug: slugify(r.item || ""),
-  last_reviewed: r.last_reviewed || today,
-}));
+// 1) Normalise: regenerate slug from item; auto-map deprecated slugs to canonical vocabulary;
+//    reject generic-bucket foods; stamp last_reviewed if missing.
+const droppedIncoming = [];
+incoming = incoming
+  .map((r) => {
+    let slug = slugify(r.item || "");
+    let item = r.item;
+    let category = r.category;
+    if (vocab.merges[slug]) {
+      const canon = vocab.merges[slug];
+      const c = vocab.canonical[canon];
+      slug = canon;
+      if (c) { item = c.name; category = c.category; }
+    }
+    return { ...r, item, category, slug, last_reviewed: r.last_reviewed || today };
+  })
+  .filter((r) => {
+    if (vocab.drop.includes(r.slug)) { droppedIncoming.push(r.slug); return false; }
+    return true;
+  });
+if (droppedIncoming.length) {
+  console.log(`Skipped ${droppedIncoming.length} generic-bucket food(s) (in food-aliases drop list): ${droppedIncoming.join(", ")}`);
+}
 
 // 2) Pet sanity: every row's pet must exist with taxon + diet.
 const petsInBatch = [...new Set(incoming.map((r) => r.pet))];
